@@ -1,10 +1,10 @@
 import { SectionShell } from "@/components/section-shell";
 
 const achievements = [
-  "Top 3% Global Rank — TryHackMe",
+  "Top 3% global on TryHackMe",
   "Finalist — CREST CTF 2026",
   "Winner — GDG On Campus 30-Day Challenge (2025)",
-  "Certified Blue Team Practitioner (CBTP)",
+  "Certified Blue Team Practitioner (CBTP) — course certificate",
   "Cisco Junior Cybersecurity Analyst",
   "Microsoft Student SOC Program Foundations",
 ];

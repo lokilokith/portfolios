@@ -12,7 +12,7 @@ export function HeroSection() {
           SOC Analyst | Threat Detection | SIEM Engineering
         </p>
         <p className="mt-6 max-w-3xl text-sm leading-7 text-slate-300/90 sm:text-base sm:leading-8">
-          SOC Analyst aspirant with hands-on experience in SIEM monitoring, telemetry analysis, threat hunting, and incident investigation using Sysmon and Wazuh. SentinelTrace, MITRE ATT&CK alignment, and 50,000+ telemetry events form the core of the work shown below.
+          Early-career SOC Analyst with hands-on experience in SIEM monitoring, telemetry analysis, threat hunting, and incident investigation using Sysmon and Wazuh. SentinelTrace, MITRE ATT&CK alignment, and artifacts derived from a 50,000+ event lab dataset (see project README) form the core of the work shown below.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
@@ -33,7 +33,7 @@ export function HeroSection() {
             href="#contact"
             className="inline-flex h-12 items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-semibold text-white transition-colors hover:border-cyan-300/40 hover:bg-white/10"
           >
-            Contact Recruiter
+            Contact
           </a>
         </div>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-slate-300">
