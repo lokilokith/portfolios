@@ -10,7 +10,7 @@ export function ContactSection() {
     >
       <div className="surface-panel rounded-3xl p-6 sm:p-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
-          <div className="max-w-2xl space-y-4">
+            <div className="max-w-2xl space-y-4">
             <p className="text-sm font-medium text-white">Open to SOC Analyst roles and collaborative detection engineering work.</p>
             <p className="text-sm leading-7 text-slate-300/90 sm:leading-8">The links below make it easy to review the resume, check the SentinelTrace project, and verify hands-on activity on LinkedIn, GitHub, and TryHackMe.</p>
             <div className="flex flex-wrap gap-3">
@@ -24,7 +24,7 @@ export function ContactSection() {
             href="mailto:lokith.duraisamy@example.com"
             className="inline-flex h-12 items-center justify-center rounded-full bg-cyan-400 px-6 text-sm font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
           >
-            Email for SOC Roles
+            Contact
           </a>
         </div>
       </div>

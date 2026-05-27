@@ -60,7 +60,7 @@ export function WorkflowVisualizationSection() {
             Investigation flow
           </p>
           <p className="max-w-4xl text-sm leading-7 text-slate-300/90 sm:text-base sm:leading-8">
-            SentinelTrace moves from raw telemetry to analyst action with minimal interpretation gaps. The workflow below keeps the same operational story while reducing scroll fatigue.
+            SentinelTrace moves from raw telemetry to analyst action with minimal interpretation gaps so recruiters can scan the analyst workflow quickly.
           </p>
         </div>
 

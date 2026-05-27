@@ -1,12 +1,58 @@
 import { SectionShell } from "@/components/section-shell";
 import { ProofOfWorkGallery } from "@/components/proof-of-work-gallery";
+import Image from "next/image";
+
+function WindowsIocScannerSupportBlock() {
+  return (
+    <section className="surface-panel rounded-3xl p-6 sm:p-8">
+      <div className="flex items-start justify-between gap-3">
+        <div className="max-w-xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-slate-500">Blue-Team Utility</p>
+          <h3 className="mt-1 text-lg font-semibold tracking-tight text-white sm:text-xl">Windows IOC Scanner</h3>
+          <p className="mt-2 text-sm leading-7 text-slate-300/90">
+            A focused Windows IOC scanner that produces lightweight IOC triage artifacts for SOC investigations and telemetry review, with a supporting role alongside SentinelTrace.
+          </p>
+        </div>
+        <a
+          href="https://github.com/lokilokith/windows-ioc-scanner"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex items-center self-start rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-2 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-300/25 hover:bg-white/[0.05]"
+        >
+          View repository
+        </a>
+      </div>
+
+      <div className="mt-4 grid grid-cols-2 gap-3">
+        <div className="rounded-2xl overflow-hidden border border-white/6">
+          <Image
+            src="/images/windows-ioc-scanner/dashboard-clean-state.png"
+            alt="Windows IOC Scanner dashboard"
+            width={800}
+            height={520}
+            className="object-cover"
+          />
+        </div>
+        <div className="rounded-2xl overflow-hidden border border-white/6">
+          <Image
+            src="/images/windows-ioc-scanner/powershell-detection-evidence.png"
+            alt="PowerShell detection evidence"
+            width={800}
+            height={520}
+            className="object-cover"
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
 
 const highlights = [
   "Sysmon log ingestion and normalization",
   "MITRE ATT&CK aligned detections",
   "Flask dashboards for investigation workflows",
   "Incident triage and timeline reconstruction",
-  "Telemetry correlation across 50,000+ endpoint events",
+  "Telemetry correlation across a 50,000+ event lab dataset (see project README)",
   "PowerShell abuse, DNS beaconing, and LOLBIN detection workflows",
 ];
 
@@ -15,8 +61,8 @@ export function FeaturedProjectSection() {
     <SectionShell
       id="featured-project"
       eyebrow="Featured Project"
-      title="SentinelTrace Platform: SOC Telemetry Investigation Framework"
-      description="A SOC telemetry investigation framework that turns endpoint events into defensible detections, investigation context, and recruiter-ready proof of engineering work."
+      title="SentinelTrace — SOC telemetry investigation"
+      description="A SOC telemetry investigation that ingests endpoint events, correlates telemetry, and produces investigation artifacts and evidence for triage."
     >
       <div className="space-y-4">
         <section className="surface-panel rounded-3xl p-6 sm:p-8">
@@ -34,13 +80,13 @@ export function FeaturedProjectSection() {
             <div className="rounded-3xl border border-white/8 bg-white/[0.03] p-5">
               <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">Overview</h3>
               <p className="mt-3 text-sm leading-7 text-slate-300/90">
-                The platform processes 50,000+ telemetry events and is designed to support SOC workflows where evidence must remain traceable from raw event to final analyst conclusion.
+                The project uses artifacts derived from a 50,000+ event lab dataset (see project README) and is designed to support SOC workflows where evidence remains traceable from raw event to analyst conclusion.
               </p>
             </div>
             <div className="rounded-3xl border border-white/8 bg-white/[0.03] p-5">
               <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">Detection Capabilities</h3>
               <p className="mt-3 text-sm leading-7 text-slate-300/90">
-                Detection logic covers behavioral correlation, DNS beaconing detection, PowerShell abuse simulation, and LOLBIN analysis to surface suspicious patterns without drowning the analyst in noise.
+                Detection logic includes telemetry correlation for DNS beaconing, PowerShell abuse detection, and LOLBIN analysis to surface suspicious patterns and reduce false positives.
               </p>
             </div>
             <div className="rounded-3xl border border-white/8 bg-white/[0.03] p-5">
@@ -80,7 +126,7 @@ export function FeaturedProjectSection() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">Key Achievements</p>
               <p className="mt-2 text-sm leading-7 text-slate-300/90">
-                Proof points that make the project credible to a recruiter or hiring manager.
+                Selected outcomes and artifacts for verification.
               </p>
             </div>
             <a
@@ -89,13 +135,13 @@ export function FeaturedProjectSection() {
               rel="noreferrer"
               className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-100 transition-colors hover:border-cyan-300/30 hover:bg-white/8"
             >
-              Review repository
+              View repository
             </a>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {[
-              "Processed 50,000+ endpoint telemetry events for investigation workflows.",
-              "Built behavioral correlation paths for DNS beaconing and PowerShell abuse.",
+              "Processed artifacts from a 50,000+ event lab dataset for investigation workflows.",
+              "Built telemetry correlation for DNS beaconing and PowerShell abuse.",
               "Reconstructed attack timelines to support incident triage and reporting.",
               "Aligned detections to MITRE ATT&CK for analyst clarity and coverage.",
               "Presented telemetry in a format that supports faster SOC review.",
@@ -116,6 +162,7 @@ export function FeaturedProjectSection() {
             </p>
           </div>
           <ProofOfWorkGallery />
+          <WindowsIocScannerSupportBlock />
         </section>
       </div>
     </SectionShell>
