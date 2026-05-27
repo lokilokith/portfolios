@@ -20,12 +20,12 @@ export function ContactSection() {
               <a href="https://tryhackme.com/p/loki.lokith" target="_blank" rel="noreferrer" className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition-colors hover:border-cyan-300/30 hover:bg-white/8 hover:text-cyan-200">TryHackMe</a>
             </div>
           </div>
-          <a
-            href="mailto:lokith.duraisamy@example.com"
-            className="inline-flex h-12 items-center justify-center rounded-full bg-cyan-400 px-6 text-sm font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
-          >
-            Contact
-          </a>
+<a
+  href="mailto:lokilokith123@gmail.com"
+  className="inline-flex h-12 items-center justify-center rounded-full bg-cyan-400 px-6 text-sm font-semibold text-slate-950 transition-colors hover:bg-cyan-300"
+>
+  Contact
+</a>
         </div>
       </div>
     </SectionShell>
